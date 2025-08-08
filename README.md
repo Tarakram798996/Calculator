@@ -12,6 +12,10 @@ A basic calculator built using **HTML**, **CSS**, and **JavaScript**.
 - CSS
 - JavaScript
 
+## 🚀 Live Demo
+
+[Click here to try the Calculator](https://tarakram798996.github.io/Calculator/)
+
 ## How to Run
 1. Download or clone the repository.
 2. Open \`index.html\` in your browser.
