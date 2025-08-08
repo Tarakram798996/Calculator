@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="calculator"><h2 style="color:rgb(196, 196, 26)">Calculator</h2>
+        <input type="text" id="display" class="display" readonly>
+        <div class="buttons">
+            <button class="button" onclick="appendValue('7')">7</button>
+            <button class="button" onclick="appendValue('8')">8</button>
+            <button class="button" onclick="appendValue('9')">9</button>
+            <button class="button operator" onclick="appendValue('/')">/</button>
+            <button class="button" onclick="appendValue('4')">4</button>
+            <button class="button" onclick="appendValue('5')">5</button>
+            <button class="button" onclick="appendValue('6')">6</button>
+            <button class="button operator" onclick="appendValue('*')">*</button>
+            <button class="button" onclick="appendValue('1')">1</button>
+            <button class="button" onclick="appendValue('2')">2</button>
+            <button class="button" onclick="appendValue('3')">3</button>
+            <button class="button operator" onclick="appendValue('-')">-</button>
+            <button class="button" onclick="appendValue('0')">0</button>
+            <button class="button" onclick="appendValue('.')">.</button>
+            <button class="button operator" onclick="calculate()">=</button>
+            <button class="button operator" onclick="appendValue('+')">+</button>
+            <button class="button operator" onclick="clearDisplay()" style="grid-column: span 3;">Clear</button>
+            <button class="button operator" onclick="clearone()">⌫</button>
+        </div>
+    </div>
+
+    <div class="hist"><h2 style="color:rgb(196, 196, 26) ;">History ⟲</h2>
+    <div>
+        <textarea class="dis" id="history" rows="5" readonly></textarea>
+        <button class="clearhist" onclick="clearHist()" style="grid-column: span 4;">Clear</button>
+    </div>
+    </div>
+
+    <script src="./script.js">
+        
+    </script>
+</body>
+</html>
